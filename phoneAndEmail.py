@@ -13,6 +13,12 @@ phone_regex = re.compile(r'''(
 ) ''', re.VERBOSE)
 
 #　TODO: 電子メールの正規表現を作る。
+email_regex = re.compile(r'''(
+  [a-zA-Z0-9._%+-]+
+  @
+  [a-zA-Z0-9.0]+
+  (\.[a-zA-Z]{2,4})
+) ''', re.VERBOSE)
 
 # TODO: クリップボードのテキストを検索する
 
